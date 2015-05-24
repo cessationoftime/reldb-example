@@ -50,7 +50,7 @@ Tuples v = (Tuples)r.awaitResult(1000);
 # Client API Improvement, Strong Typing for Nullable/[Optional](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html) values
 I'd like to see optional values be strongly typed in the rel client.
 ```
-Value v = t.get("NameOption"); //should throw an exception when used on Nullable/[Optional](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html) types.
+Value v = t.get("NameOption"); //should throw an exception when used on Nullable/Optional types.
 ```
 instead one would use
 ```
