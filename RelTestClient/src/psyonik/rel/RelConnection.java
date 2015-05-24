@@ -37,7 +37,7 @@ public class RelConnection {
 		}
 	};
 
-	
+		
 	public static void UseConnection(Connection c) throws IOException {
 		Response r = c.evaluate("sys.Catalog", ch);
 		
