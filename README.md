@@ -54,13 +54,10 @@ Value v = t.get("NameOption"); //should throw an exception when used on Nullable
 ```
 instead one would use
 ```
-ValueOption vo = t.option("NameOption");
+Optional<Value> vo = t.option("NameOption");
 ```
 
-And then when we call the toInt,toString functions we get an [Optional<T>](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html) type back.
-```
-Optional<String> nameOption = vo.toString();
-```
+See: the new [Optional](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html) type for Java 8
 
 
 
