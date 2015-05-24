@@ -47,4 +47,21 @@ Tuples v = (Tuples)r.awaitResult(1000);
 		}
 ```
 
+# Client API Improvement, Strong Typing for Optional values
+I'd like to see optional values be strongly typed in the rel client.
+```
+Value v = t.get("NameOption"); //should throw an exception when used on Optional/Nullable types.
+```
+instead one would use
+```
+ValueOption vo = t.option("NameOption");
+```
 
+And then when we call the toInt,toString functions we get an Option<?> type back.
+```
+Option<String> nameOption = vo.toString();
+```
+
+
+
+```
